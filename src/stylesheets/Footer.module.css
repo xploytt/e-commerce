@@ -1,0 +1,21 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer nav {
+  font-size: 1.36rem;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer small {
+  text-align: center;
+  display: block;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  word-spacing: 0.2rem;
+}

@@ -1,0 +1,33 @@
+.title,
+.outerGridContainer {
+  width: 90%;
+  margin: 3rem auto 5rem;
+  max-width: 1330px;
+}
+
+.title h3 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+.title a {
+  font-size: 1.1rem;
+  padding-left: 1.2rem;
+}
+
+.categoriesBtns {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.categoriesBtns button {
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.3rem 1rem;
+  background-color: inherit;
+}

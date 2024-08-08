@@ -1,0 +1,24 @@
+.productGrid {
+  display: grid;
+  gap: 1rem;
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+@media (min-width: 429px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 599px) {
+  .productGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 749px) {
+  .productGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

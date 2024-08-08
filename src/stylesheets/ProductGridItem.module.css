@@ -1,0 +1,18 @@
+.gridItem {
+  border: 3px solid rgba(0, 0, 0, 0.205);
+  padding: 0 1rem 1rem;
+}
+
+.gridItem:hover {
+  border-color: black;
+}
+
+.gridItem h2 {
+  font-size: 1.3rem;
+}
+
+.gridItem p {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}

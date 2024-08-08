@@ -1,0 +1,57 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Blinker", sans-serif;
+  border: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.flex-and-align {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide a {
+  display: block;
+  height: 21rem;
+}
+
+.container {
+  padding: 4rem 3rem;
+  width: 95%;
+  background-color: #e9e9e9;
+  max-width: 1330px;
+}
+
+@media (min-width: 599px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 753px) and (max-width: 1029px) {
+  .second-col > div.second-banner {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+img.productImg {
+  width: 100%;
+}
+
+div.close {
+  padding: 0 1rem;
+}

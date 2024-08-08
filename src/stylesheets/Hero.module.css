@@ -1,0 +1,99 @@
+.hero {
+  margin: 3rem auto;
+  /* margin-bottom: 3rem; */
+  width: 95%;
+  max-width: 1330px;
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 260px 260px;
+  gap: 0.8rem;
+}
+
+@media (min-width: 749px) {
+  .xsHero {
+    display: none;
+  }
+  .gridContainer {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 0;
+  }
+  .mdHero {
+    display: grid;
+    row-gap: 1rem;
+  }
+  .gridContainer > div {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 749px) {
+  .mdHero {
+    display: none;
+  }
+}
+
+.gridContainer > div p {
+  position: absolute;
+  bottom: 0.1rem;
+  left: 2%;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 600;
+}
+
+@media (min-width: 399px) {
+  .gridContainer > div p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 569px) {
+  .gridContainer > div p {
+    font-size: 2rem;
+    left: 5%;
+  }
+}
+
+@media (min-width: 899px) {
+  .gridContainer > div p {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1029px) {
+  .gridContainer > div p {
+    font-size: 2.3rem;
+    padding: 0.7rem;
+  }
+}
+
+.hero a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color ease 400ms;
+}
+
+.hero a:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mdHero,
+.heroGridItem,
+.gridContainer > div {
+  position: relative;
+}

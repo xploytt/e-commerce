@@ -1,0 +1,187 @@
+.productSection {
+  margin-top: 3rem;
+  padding: 1rem;
+  max-width: 1330px;
+}
+
+.productSection h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.3rem;
+  position: absolute;
+  width: 100%;
+  top: -2rem;
+}
+
+.productImages img {
+  width: 100%;
+}
+
+.hoverImgsContainer {
+  margin-top: 1.3rem;
+  justify-content: center;
+  max-width: 600px;
+  gap: 0.9rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hoverImgs {
+  flex: 1;
+  max-width: 115px;
+}
+
+.hoverImgs img {
+  object-fit: cover;
+}
+
+@media (min-width: 599px) {
+  .largeImgWrapper img {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.productDesc,
+.productDetails > div {
+  background-color: #e5e5e5;
+}
+
+.productDesc {
+  padding: 2rem 1.2rem;
+  font-size: 1.4rem;
+
+  margin-top: 3rem;
+}
+
+.productDesc > p {
+  font-weight: 500;
+  color: black;
+}
+
+.cartDetailsWrapper {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cartDetailsWrapper p {
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.controlCart > * {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: black;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.controlCart button:first-child {
+  border-left: 1px solid;
+}
+
+.controlCart button:last-child {
+  border-right: 1px solid;
+}
+
+.controlCart > button {
+  background-color: white;
+  transition: background-color ease 200ms;
+}
+
+.controlCart > button:hover {
+  background-color: inherit;
+}
+
+.controlCart > span {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.price {
+  margin: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.addToCart button {
+  border: 3px solid black;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.addToCart button:hover {
+  color: white;
+  background-color: black;
+  font-weight: 500;
+}
+
+.productDetails {
+  margin-top: 4rem;
+}
+
+.productDetails > div {
+  margin: 1.5rem 0;
+  padding: 0.8rem;
+}
+
+.productDetails > div h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.productDetails > div p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 450px) {
+  .cartDetailsWrapper {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 2rem;
+  }
+  .cartDetailsWrapper p {
+    margin: 0;
+  }
+}
+
+@media (min-width: 570px) {
+  .productDetails {
+    display: flex;
+    gap: 1rem;
+  }
+  .productDetails > * {
+    flex: 1;
+  }
+}
+
+@media (min-width: 850px) {
+  .productSection h2 {
+    top: 0;
+  }
+  .productSection {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .productSection > div:first-child {
+    display: flex;
+  }
+  .productSection > div:first-child > div {
+    width: 50%;
+  }
+  .productImages {
+    align-self: center;
+  }
+
+  .productDesc {
+    margin-top: 0;
+    padding: 10rem 2rem 5rem;
+    height: fit-content;
+  }
+}
