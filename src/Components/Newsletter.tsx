@@ -5,7 +5,7 @@ import styles from "../stylesheets/NewsLetter.module.css";
 const Newsletter: React.FC = () => {
   const [email, setEmail] = useState("");
   const [feedback, setFeedback] = useState("");
-  const [isValidEmail, setIsValidEmail] = useState(false);
+  const [_, setIsValidEmail] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);

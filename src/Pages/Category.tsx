@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { fetchProduct, Product, ProductType } from "../supabase/supabase";
+import React, { useState } from "react";
+import { ProductType } from "../supabase/supabase";
 import ToTitleCase from "../utilities/toTitleCase";
 import ProductGrid from "../Components/ProductGrid";
 import styles from "../stylesheets/Category.module.css";
@@ -9,7 +9,8 @@ import ProductGridItem from "../Components/ProductGridItem";
 
 const Category: React.FC = () => {
   const [category, setCategory] = useState<ProductType | "all">("all");
-  const { products, loading, error } = useFetch(category);
+  const { products } = useFetch(category);
+  // const { products, loading, error } = useFetch(category); for loading and error implementation
   const categories: (ProductType | "all")[] = [
     "all",
     "furnitures",
