@@ -24,3 +24,9 @@ dist-ssr
 *.sw?
 
 .env
+build/
+
+# TypeScript output
+*.js
+*.d.ts
+*.map
