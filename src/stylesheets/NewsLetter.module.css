@@ -26,6 +26,7 @@
   font-family: sans-serif;
   padding: 0.5rem;
   width: 100%;
+  border-radius: 0;
 }
 
 @media (max-width: 467px) {
@@ -47,4 +48,9 @@
   .newsletter input[type="email"] {
     width: 65%;
   }
+}
+
+.newsletter .submitBtn {
+  background-color: #f0f0f0;
+  color: black;
 }

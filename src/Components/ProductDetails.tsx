@@ -92,6 +92,7 @@ const ProductDetails: React.FC = () => {
 
             <div className={`${styles.controlCart} flex-and-align`}>
               <button
+                style={{ borderLeftColor: "black" }}
                 onClick={() => {
                   dispatch(decrementQuantity(product?.name));
                 }}
@@ -104,6 +105,7 @@ const ProductDetails: React.FC = () => {
               </span>
 
               <button
+                style={{ borderRightColor: "black" }}
                 onClick={() =>
                   dispatch(
                     addToCart({

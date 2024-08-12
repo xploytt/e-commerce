@@ -10,6 +10,11 @@
   outline: none;
 }
 
+svg,
+* {
+  color: black;
+}
+
 body.scrollHidden {
   overflow: hidden;
 }
