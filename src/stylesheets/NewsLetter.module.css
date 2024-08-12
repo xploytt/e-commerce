@@ -8,7 +8,7 @@
 }
 
 .newsletter h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-top: 1.5rem;
 }
@@ -21,18 +21,30 @@
 .newsletter input[type="email"],
 .newsletter .submitBtn {
   max-width: 250px;
-  font-size: 1.35rem;
+  font-size: 1rem;
   text-align: center;
   font-family: sans-serif;
-  padding: 0.8rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 @media (max-width: 467px) {
   .submitBtn {
     margin: 7px auto;
-    width: 250px;
   }
   .newsletter form {
     max-width: 250px;
+  }
+}
+
+@media (min-width: 467px) {
+  .newsletter form {
+    display: flex;
+  }
+  .newsletter .submitBtn {
+    width: 35%;
+  }
+  .newsletter input[type="email"] {
+    width: 65%;
   }
 }

@@ -1,0 +1,122 @@
+.cartSection {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  width: 100vw;
+  z-index: 100000;
+  height: 100vh;
+}
+
+.cartWrapper {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  overflow: scroll;
+}
+
+.cartHeader h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+.cartHeader button {
+  background-color: inherit;
+}
+
+.cartContent img {
+  width: 100%;
+}
+
+.cartContent {
+  padding-bottom: 8rem;
+}
+
+.cartItemBox {
+  border: 1px solid black;
+  width: 80%;
+  margin: 2.5rem auto 0;
+  margin-top: 2.5rem;
+}
+
+.cartItemBox > div:last-child {
+  padding: 1rem 0.5rem;
+  background-color: #f2f2f2;
+}
+
+.cartItemBox h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cartItemBox p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.cartItemBox button {
+  margin-left: auto;
+}
+
+.cartFooter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0.6rem;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
+  z-index: 100;
+  text-align: center;
+}
+
+.cartFooter h2,
+.cartFooter p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cartFooter p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .cartSection {
+    background-color: rgba(138, 138, 138, 0.5);
+  }
+
+  .cartSection h2,
+  .cartSection p {
+    text-align: left;
+  }
+
+  .cartWrapper,
+  .cartFooter {
+    width: 500px;
+  }
+
+  .cartFooter {
+    padding: 0 1.5rem;
+  }
+
+  .cartItemBox {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    align-items: stretch;
+  }
+
+  .cartItemBox > div:first-child {
+    width: 40%;
+  }
+
+  .cartItemBox > div:last-child {
+    flex: 1;
+  }
+}

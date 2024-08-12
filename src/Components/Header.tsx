@@ -1,29 +1,35 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../stylesheets/Header.module.css";
+import { useSelector } from "react-redux";
+import { CartRootState } from "../redux/store";
+
+import { useCartController } from "../context/cartControl";
 
 const Header: React.FC = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
   const headerDivRef = useRef<HTMLDivElement>(null);
+  const { setShowCart } = useCartController();
 
   const handleMobileNav = () => {
     setShowMobileNav(!showMobileNav);
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(scrollY);
       window.scrollY >= 140
         ? headerDivRef.current?.classList.add("close")
         : headerDivRef.current?.classList.remove("close");
     });
   }, []);
 
+  const { cart } = useSelector((state: CartRootState) => state.cart);
+
   return (
     <>
       <header className={`${styles.header}`}>
         <div
           ref={headerDivRef}
-          className={`${styles.headerDiv} flex-and-align`}
+          className={`${styles.headerDiv} flex-and-align containerWidth`}
         >
           <div>
             <NavLink to={"/"}>
@@ -37,7 +43,13 @@ const Header: React.FC = () => {
           </nav>
 
           <div>
-            <button style={{ position: "relative" }}>
+            <button
+              style={{ position: "relative" }}
+              onClick={() => {
+                document.body.classList.add("scrollHidden");
+                setShowCart(true);
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -54,7 +66,9 @@ const Header: React.FC = () => {
                 <path d="M17 17h-11v-14h-2"></path>
                 <path d="M6 5l14 1l-1 7h-13"></path>
               </svg>
-              <span data-info="cart-length">1</span>
+              {cart.length !== 0 && cart.length && (
+                <span data-info="cart-length">{cart.length}</span>
+              )}
             </button>
 
             <button className={`${styles.hamburger}`} onClick={handleMobileNav}>

@@ -14,12 +14,13 @@ const ProductWeAreProudOf: React.FC = () => {
     <>
       <div
         style={{
-          maxWidth: "1330px",
           margin: "3rem auto",
-          width: "95%",
         }}
+        className={`containerWidth`}
       >
-        <h2 style={{ margin: "7rem 0 3rem", fontWeight: 600 }}>
+        <h2
+          style={{ margin: "7rem 0 3rem", fontWeight: 600, fontSize: "1.5rem" }}
+        >
           Product we are proud of
         </h2>
         <ProductGrid>

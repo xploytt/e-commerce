@@ -1,7 +1,6 @@
 .shopNowContainer {
   background-color: #e9e9e9;
   width: 95%;
-  max-width: 1300px;
 }
 
 .shopNowContainer.container {
@@ -10,24 +9,23 @@
 
 .shopNowContainer h2 {
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #000;
 }
 
 .shopNowContainer p {
   font-weight: 500;
-  font-size: 1.2rem;
-  color: #480000;
+  font-size: 1.1rem;
 }
 
 .shopNowContainer a {
   background-color: black;
   color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border: 3px solid black;
-  font-size: 1.3rem;
+  transition: all 0.3s ease, color 0.3s ease;
+  border: 2px solid black;
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 0.7rem;
+  padding: 0.5rem 0.7rem;
   margin-top: 0.5rem;
   display: inline-block;
 }

@@ -3,14 +3,20 @@ import { Paths } from "../App";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
+import Cart from "./Cart";
+import ControlCartProvider from "../context/cartControl";
 
 const HeaderAndFooter: React.FC = () => {
   const [_, updatePage] = useState<Paths>("/");
+
   return (
     <>
-      <Header />
-      <Outlet context={updatePage} />
-      <Footer />
+      <ControlCartProvider>
+        <Header />
+        <Cart />
+        <Outlet context={updatePage} />
+        <Footer />
+      </ControlCartProvider>
     </>
   );
 };

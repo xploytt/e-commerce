@@ -9,7 +9,10 @@ import { Link } from "react-router-dom";
 const Hero: React.FC = () => {
   return (
     <>
-      <section id="hero-section" className={`${styles.hero} hero`}>
+      <section
+        id="hero-section"
+        className={`${styles.hero} hero containerWidth`}
+      >
         <div id="hero-div" className={styles.gridContainer}>
           <div className={`${styles.heroGridItem}`}>
             <Link to={"#"}>

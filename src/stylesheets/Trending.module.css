@@ -1,6 +1,4 @@
 .trending {
-  max-width: 1330px;
-  width: 95%;
   margin: 60px auto;
 }
 
@@ -12,7 +10,7 @@
 
 .trending button {
   background-color: #373737;
-  padding: 0.7rem;
+  padding: 0.4rem;
   color: white;
   transition: background-color ease 200ms;
 }
@@ -27,5 +25,5 @@
   margin-right: auto;
   font-weight: 600;
   color: black;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }

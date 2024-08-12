@@ -25,7 +25,7 @@ export interface IShopeNow {
 const ShopNow: React.FC<IShopeNow> = ({ image, reverse = false, content }) => {
   return (
     <>
-      <Container className={styles.shopNowContainer}>
+      <Container className={`${styles.shopNowContainer} containerWidth`}>
         <Row className="styles.shopNowRow">
           {reverse && (
             <Col className={`${styles.imgCol} content-col`}>

@@ -11,7 +11,7 @@ const Trending: React.FC = () => {
 
   return (
     <>
-      <section className={styles.trending}>
+      <section className={`${styles.trending} containerWidth`}>
         <div>
           <h3>Trending Now</h3>
           <div>

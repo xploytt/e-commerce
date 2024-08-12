@@ -28,7 +28,7 @@ const Category: React.FC = () => {
         <h3>{category.toUpperCase()}</h3>
       </div>
 
-      <div className={`${styles.categoriesBtns} flex-and-align`}>
+      <div className={`${styles.categoriesBtns} containerWidth flex-and-align`}>
         {categories.map((val) => (
           <button key={val} onClick={() => setCategory(val)}>
             {ToTitleCase(val === "skin-care" ? "skincare" : val)}
