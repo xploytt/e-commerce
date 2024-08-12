@@ -68,7 +68,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  padding: 0.6rem;
+  padding: 1rem;
   width: 100%;
   bottom: 0;
   background-color: white;
@@ -102,7 +102,7 @@
   }
 
   .cartFooter {
-    padding: 0 1.5rem;
+    padding: 1 1.5rem;
   }
 
   .cartItemBox {

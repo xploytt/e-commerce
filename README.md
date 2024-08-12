@@ -26,6 +26,7 @@ Experience effortless shopping with our Minimalist E-commerce App. Enjoy a clean
 - Supabase
 - React Hooks
 - React-Bootstrap
+- Redux
 
 ## Installation
 
